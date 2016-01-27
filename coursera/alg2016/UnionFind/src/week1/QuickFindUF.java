@@ -1,10 +1,11 @@
 package week1;
 
-public class QuickFindUF {
+public class QuickFindUF extends UF{
 	private int[] id;
 	public QuickFindUF(int N){
 		//creates the private datastructure(array in this case) 
 		// and sets the vlaue of each object the same as it's id
+		super(N);
 		id = new int[N];
 		for(int i = 0; i < N; i++)
 			id[i] = i;

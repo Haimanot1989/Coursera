@@ -5,7 +5,7 @@ public class DynamicConnectivityClient {
 	public static void main(String[] args)
 	{
 		int N = StdIn.readInt();
-		UF uf = new UF(N);
+		UF uf = new QuickFindUF(N);
 		while(!StdIn.isEmpty())
 		{
 			int p = StdIn.readInt();
